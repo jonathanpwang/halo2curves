@@ -1,9 +1,9 @@
-use crate::bn256::curve::*;
-use crate::bn256::fq::*;
-use crate::bn256::fq12::*;
-use crate::bn256::fq2::*;
-use crate::bn256::fq6::FROBENIUS_COEFF_FQ6_C1;
-use crate::bn256::fr::*;
+use crate::bn254::curve::*;
+use crate::bn254::fq::*;
+use crate::bn254::fq12::*;
+use crate::bn254::fq2::*;
+use crate::bn254::fq6::FROBENIUS_COEFF_FQ6_C1;
+use crate::bn254::fr::*;
 use crate::pairing::{Engine, MillerLoopResult, MultiMillerLoop, PairingCurveAffine};
 use core::borrow::Borrow;
 use core::iter::Sum;
