@@ -1,7 +1,7 @@
 use crate::arithmetic::mul_512;
-use crate::bn254::Fq;
-use crate::bn254::Fq2;
-use crate::bn254::Fr;
+use crate::bn256::Fq;
+use crate::bn256::Fq2;
+use crate::bn256::Fr;
 use crate::{Coordinates, CurveAffine, CurveAffineExt, CurveExt, Group};
 use core::cmp;
 use core::fmt::Debug;
@@ -237,7 +237,7 @@ impl CofactorGroup for G2 {
 #[cfg(test)]
 mod tests {
 
-    use crate::bn254::{
+    use crate::bn256::{
         curve::{CurveEndo, ENDO_BETA},
         Fr, G1Affine, G1, G2,
     };

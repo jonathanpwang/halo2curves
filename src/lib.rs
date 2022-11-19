@@ -2,7 +2,7 @@
 
 mod arithmetic;
 
-pub mod bn254;
+pub mod bn256;
 pub mod pairing;
 pub mod pasta;
 pub mod secp256k1;
@@ -10,7 +10,7 @@ pub mod secp256k1;
 #[macro_use]
 mod derive;
 
-pub use arithmetic::CurveAffineExt;
+pub use arithmetic::{BigPrimeField, CurveAffineExt};
 pub use pasta_curves::arithmetic::{Coordinates, CurveAffine, CurveExt, FieldExt, Group};
 
 pub extern crate group;
